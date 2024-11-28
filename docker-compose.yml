@@ -1,0 +1,14 @@
+services: 
+  ssh-server:  
+    build: 
+      context: ./server 
+    restart: unless-stopped
+
+  ssh-client:     
+    depends_on:
+      - ssh-server
+    build: 
+      context: ./server 
+    entrypoint: ["sleep", "infinity"]  
+    restart: unless-stopped
+
