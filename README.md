@@ -34,12 +34,6 @@ This project demonstrates how to create and configure two Docker containers: one
    ```
    The default password is `0`.
 
-## Directory Structure
-```
-.
-├── docker-compose.yml  # Compose configuration for services
-└── Dockerfile          # Dockerfile to build SSH-enabled images
-```
 
 ## Cleanup
 Stop and remove the containers:
